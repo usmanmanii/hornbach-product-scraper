@@ -1,0 +1,92 @@
+# ── Environment & secrets ────────────────────────────────────────────────────
+.env.*.local
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# ── Virtual environments ───────────────────────────────────────────────────────
+venv/
+.venv/
+ENV/
+env/
+
+# ── Credentials (never commit service account keys) ────────────────────────────
+credentials/
+service_account.json
+*-service-account*.json
+google-credentials.json
+
+# ── IDE & OS ─────────────────────────────────────────────────────────────────
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Scraper output & runtime data ────────────────────────────────────────────
+output/
+output_local/
+*.csv
+!product-info.csv.example
+*.log
+missing_urls.txt
+
+# Scraper state & cache files
+.crawl_cache.json
+.crawl_cache_full.json
+state.json
+retry_queue.json
+*.pid
+.fetch_remaining.pid
+
+# ── Local offline mirror (large; not for version control) ──────────────────────
+www.hornbach.de/
+
+# ── Playwright ─────────────────────────────────────────────────────────────────
+playwright-report/
+test-results/
+.playwright/
+
+# ── Archives & temp files ──────────────────────────────────────────────────────
+*.zip
+*.tar.gz
+*.tmp
+*.bak
+config.bat
+node_modules
